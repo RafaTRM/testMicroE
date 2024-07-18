@@ -103,12 +103,12 @@ header::before {
 .cabecera {
     width: 100%;
     height: inherit;
-    border-bottom: 3px solid transparent;
-    box-shadow: 1px 1px 9px 0 linear-gradient(to right, #f9f9f9, #c8ecffde, #f9f9f9);
+    border-bottom: 1px solid #f9f9f9;
+    box-shadow: 3px 3px 9px 0 linear-gradient(to right, #f9f9f9, #c8ecffde, #f9f9f9);
     position: fixed;
     top: 0;
     transition: ease-in-out 1s;
-    background: #00001c;
+    background: #220066;
     z-index: 100;
     overflow: hidden;
 }
@@ -139,6 +139,7 @@ header::before {
     padding-right: 0rem;
     overflow: hidden;*/
     background: #00001c;
+    background: transparent;
 
 }
 
@@ -239,7 +240,7 @@ header::before {
     overflow: hidden;
     margin-top: -8rem;
     height: auto;
-    height: 700px;
+    height: 80vh;
     overflow: hidden;
     background: #cdd704;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #ffffff, #edeff2, #e3e9ee, #d5e1ed, #d1cf60, #d5d236);  /* Chrome 10-25, Safari 5.1-6 */
@@ -250,11 +251,12 @@ header::before {
     flex-direction: column;
     background: linear-gradient(to left, #7cf536fe, #baf70353); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: #060030;
+    background: #4709c2;
     
-    background-image: url(./eAcc00.png);
+    background-image: url(./eAcc10.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: center;
     background-position-y: center;
 }
 
@@ -264,7 +266,7 @@ header::before {
         width: 1300px;
         padding: 0rem 2rem 0 2rem;
         height: auto;
-        height: 88%;
+        height: 80vh;
         margin: auto;
         margin-top: 8rem;
         margin-bottom: 0rem;
@@ -275,27 +277,30 @@ header::before {
 
         .textos-header {
             position: relative;
-            width: 100%;
-            height: 52vh;
-            height: 80%;
+            width: 90%;
+            height: 80vh;
+            height: 60%;
             /*height: auto;*/
-
-            margin-top: 0;
+            margin-top: 5rem;
+            /*left: 2rem;*/
+            padding-left: 8%;
+            padding-right: 8%;
             /*margin-bottom: 16vh;*/
             display: flex;
             flex-direction: column;
-            align-items: start;
-            justify-content: flex-start;
+            text-align: right;
             /*justify-content: space-between;
             justify-content: right;
             justify-items: right;*/
             user-select: none;
+            background: rgba(177, 177, 177, 0.45);
+            border-radius: 1rem;
         }
 
         .textos-header h1 {
-            width: 75%;
+            width: 100%;
             height: auto;
-            padding: 1rem 0 1rem 0;
+            padding: 0rem 0 0rem 0;
             font-size: 1.8rem;
             text-transform: uppercase;
             font-weight: 300;
@@ -306,11 +311,11 @@ header::before {
             color: #f9f9f9;
             font-family: 'Arial Narrow Bold', sans-serif;
             letter-spacing: 0.2rem;
-            margin-top: 2rem;
+            margin-top: 6rem;
         }
 
         .textos-header h1 span {
-            width: 75%;
+            width: 100%;
             padding: 0 0;
             padding-left: 0;
             padding-bottom: 0;
@@ -327,16 +332,16 @@ header::before {
         }
 
         .textos-header h2 {
-            max-width: 60%;
-            font-size: 2.2rem;
-            line-height: 2.8rem;
+            max-width: 100%;
+            font-size: 2.8rem;
+            line-height: 3.2rem;
             font-weight: 300;
             text-align: justify;
             color: #000514;
             letter-spacing: normal;
             color: rgb(251, 251, 169);
             color: #484A47;
-            color: #f9f9f9;
+            color: #ffffff;
             font-family: 'Arial Narrow Bold', sans-serif;
             margin-top: 0rem;
             padding: 0 0;
@@ -344,20 +349,21 @@ header::before {
 
 
         .textos-header p {
-            max-width: 60%;
+            max-width: 100%;
             font-weight: 100;
             text-align: justify;
             font-size: 1.8rem;
             font-family: 'Montserrat', sans-serif;
             letter-spacing: normal;
-            color: #f9f9f9;
+            color: #f2f2f2;
             font-family: 'Arial Narrow Bold', sans-serif;
-            line-height: 2rem;
-            margin-top: 16%;
+            line-height: 2.2rem;
+            margin-top: 5%;
         }
 
     .contactanos {
         /*width: 100%;*/
+        margin-top: 3%;
         height: 12rem;
         height: 20%;
         display: flex;
@@ -384,7 +390,7 @@ header::before {
             width: 14rem;
             /*height: 12rem;*/
             border-radius: 0.3rem;
-            background: #181818cc;
+            background: #ffffff31;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -397,7 +403,7 @@ header::before {
             margin: 0rem auto 2rem auto;
             /*bottom: 2rem;*/
             text-decoration: none;
-            border: solid #019dfe 0.1rem;
+            border: solid #f9f9f9 0.1rem;
             cursor: pointer;
         }
 
@@ -431,19 +437,20 @@ header::before {
 
 .portfolioservs {
     width: 100%;
-    height: 62vh;
+    height: 53vh;
     background-image: url('./fondo_portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
     background-position-y: center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .carcontainer {
-    position: absolute;
+    position: relative;
     width: 130rem;
     max-width: 130rem;
     height: inherit;
@@ -452,6 +459,7 @@ header::before {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
 }
 .carslider {
@@ -462,14 +470,17 @@ header::before {
     border-radius: 0rem;
     max-width: 130rem   ;
     padding: 0 2rem;
+    justify-items: center;
+    justify-content: center;
 }
 .carslider .carslides {
     position: absolute;
     width: 100%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(calc(-50% - 3rem));
     width: 24rem;
     height: 32rem;
+    height: 28rem;
     /*background: var(--img);*/
     background-position: right;
     background-size: 100%;
@@ -477,22 +488,20 @@ header::before {
     transition: 0.8s;
     box-shadow: 0 2rem 3rem rgba(0,0,0, 0.5);
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-end;
-    background: #c6d1f8ca;
     background: #040023ae;  
+    background: #0600a8bd;
     padding: 0 2rem;
 }
-
-
-
 /*.carslider .carslides:nth-child(1), */
 .carslider .carslides:nth-child(1) {
     position: absolute;
-    top: 0;
+    top: 2vh;
     left: 0;
-    width: 100%;
+    width: 63%;
     height: 100%;
+    height: auto;
     transform: translateY(0);
     /*box-shadow: 0 2.5rem 5rem rgba(0,0,0, 0.5);*/
     /*background: var(--img);*/
@@ -503,10 +512,13 @@ header::before {
     background-repeat: no-repeat;
     background-position: calc(180%);
     align-items: center;
-    padding: 0 0rem;
+    padding: 0rem 0rem;
+    margin: 2rem 0rem;
+    
+    border-top: 1.5px solid rgb(61, 13, 234);
+    border-bottom: 2px solid rgb(61, 13, 234);
+    border-radius: 0px;
 }
-
-
 .carslider .carslides:nth-child(2) {
     left: calc(40% + 240px);
     background-size: cover;
@@ -547,15 +559,17 @@ header::before {
 }
 .carbuttons {
     position: absolute;
-    right: 19rem;
-    bottom: 2rem;
+    right: 20rem;
+    /*bottom: 6rem;*/
+    transform: translateY(calc(-50% + 18rem));
     display: flex;
     gap: 5rem;
 }
 .carbuttons span {
-    width: 5rem;
-    height: 5rem;
-    background-color: #040023ae;
+    width: 4rem;
+    height: 4rem;
+    background: #040023ae;
+    background: #0600a8bd;
     box-shadow: 0 2.5rem 5rem rgba(0,0,0, 0.5);
     cursor: pointer;
     display: flex;
@@ -566,14 +580,14 @@ header::before {
 .carbuttons span::before {
     content: '';
     position: absolute;
-    width: 1.2rem;
-    height: 1.2rem;
-    border-top: .3rem solid #ffffff;
-    border-left: .3rem solid #ffffff;
-    transform: rotate(315deg) translate(0.25rem,0.25rem);
+    width: 1rem;
+    height: 1rem;
+    border-top: .2rem solid #ffffff;
+    border-left: .2rem solid #ffffff;
+    transform: rotate(315deg) translate(0.15rem,0.15rem);
 }
 .carbuttons span:nth-child(2)::before {
-    transform: rotate(135deg) translate(.25rem,0.25rem);
+    transform: rotate(135deg) translate(.15rem,0.15rem);
 }
 .carbuttons span:active {
     opacity: 0.5;
@@ -581,13 +595,13 @@ header::before {
 .slidecontent {
     position: relative;
     padding: 0.5rem;
-    width: 96%;
-    left: 2%;
+    width: 100%;
     transition: 0.5s;
     transition-delay: 0s;
     transform: translateY(-4rem);
     z-index: 1000;
     opacity: 1;
+    text-align: center;
     font-family: 'Arial Narrow Bold', sans-serif;
 }
 
@@ -612,9 +626,9 @@ header::before {
     padding-top: 0;
     font-size: 1.8rem;
     line-height: 2.2rem;
-    color: #ecebf6bd;
+    color: #ffffff;
     font-weight: 300;
-
+    font-family: 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.1rem;
 }
 .slidecontent p {
@@ -623,62 +637,81 @@ header::before {
     
 }
 
-
 .carslider .carslides:nth-child(1) .slidecontent {
     opacity: 1;
     height: auto;
-    max-height: 86%;
+    /*max-height: 86%;*/    
+    height: 42vh;
     transform: translateY(0px);
     transition-delay: 0.5s;
-    max-width: 60%;
-    margin-bottom: 0rem;
-    justify-content: flex-start;
-    align-content: flex-start;
+    max-width: 100%;
+    margin: 1rem 1rem;
+    text-align: right;
+    align-content: center;
+    overflow-y: hidden;
+    /*overflow-y: scroll;*/
+}
+.carslider .carslides:nth-child(1) .slidecontentd {
+    height: 26vh;
     overflow-y: scroll;
 }
+
+
+.carslider .carslides:nth-child(1) .slidecontentd::-webkit-scrollbar {
+    width: 0.2rem;
+    margin-left: 1rem;
+    background:transparent;
+}
+
+.carslider .carslides:nth-child(1) .slidecontentd::-webkit-scrollbar-thumb {
+    background: #010499;
+    border-radius: 0.2rem;
+    border-right: 0.15rem solid #024389;
+}
+
+
 
 .carslider .carslides:nth-child(1) .slidecontent h1 {
     font-size: 1.8rem;
     line-height: 1.8rem;
     text-transform: uppercase;
     color: #f9f9f9;
-    color: #060030;
+    color: #025c89;
     font-weight: 600;
-    text-align: left;
-    padding: 0 0;
-    letter-spacing: 0px;
+    text-align: right;
+    padding: 0 0.5rem 0 0;
+    letter-spacing: normal;
     font-family: 'Arial Narrow Bold', sans-serif;
 }
 .carslider .carslides:nth-child(1) .slidecontent h1 span {
     font-size: 1.4rem;
     font-weight: 300;
-    color: #060030;
+    padding: 0 0;
+    color: #1f01df;
 }
 
 .carslider .carslides:nth-child(1) .slidecontent h2 {
-    margin-top: 0;
-    padding: 0 0 0 0;
-    font-size: 2.6rem;
-    line-height: 3.2rem;
+    margin-top: -0.6rem;
+    padding: 0 0.5rem 0 0;
+    font-size: 3.6rem;
+    line-height: 3.8rem;
     color: #f9f9f9;
-    color: #060030;
-    font-weight: 300;
-    text-align: justify;
+    color: #0a0149;
+    font-weight: 500;
+    text-align: right;
     letter-spacing: normal;
     font-family: 'Arial Narrow Bold', sans-serif;
 }
 
-
 .carslider .carslides:nth-child(1) .slidecontent p {
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    max-width: 86%;
-    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1.65rem;
+    max-width: 90%;
+    text-align: right;
     color: #f9f9f9;
-    color: #000000;
+    color: #06013c;
     font-weight: 500;
-    text-align: justify;
-    margin-left: 6%;
+    margin-left: 5%;
     letter-spacing: normal;
     padding: 0 0;
     margin-top: 0;
@@ -693,10 +726,6 @@ header::before {
 .carslider .carslides:nth-child(1) .slidecontent .slidecont {
     display: none;
 }
-
-
-
-
 
 /*****************INICIO PORTAFOLIO SERVICIOS *****************/
 .bbsservicios {
@@ -713,7 +742,6 @@ header::before {
     user-select: none;
     
 }
-
 
 .contenedor1 {
     height: auto;
@@ -732,41 +760,38 @@ header::before {
     justify-content:center;
     /*align-content: center;*/
     user-select: none;
-    background-color: #45f804;
-    background-color: #09004d;
-    background-color: #040023fb;
+    background: #45f804;
+    background: #09004d;
+    background: #6301b3fb;
 }
 
 .serv-head > h2, .serv-head > p {
-    margin-top: 1.5rem;
     margin-left: 20%;
     width: 60%;
     color: #f9f9f9;
 }
 
 .serv-head > h2 {
+    margin-top: 2rem;
     font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
+    margin-bottom: 0;
+    color: #f4e8fefb;
 }
 
 .serv-head > p {
+    margin-top: 1rem;
     font-size: 1.6rem;
     font-weight: 300;
 }
 
 
-/*
-.serv-head p::after {
-        background-color: #151500fc;
-}
-*/
-
 .contenedor-articulo {
     background-color: #F2f2f2;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -10rem;
+    margin-top: -12rem;
     margin-bottom: 2rem;
     justify-content: space-around;
     width: 70%;
@@ -775,25 +800,8 @@ header::before {
 
 }
 
-/*service*/
-/*
-.col-md-3 > h3 {
-    text-align: center;
-    padding-top: 100px;
-}
-
-.col-md-3 > h3::after {
-    content: '';
-    background: #ff4d73;
-    display: block;
-    height: 5px;
-    width: 170px;
-    margin: 20px auto 50px; 
-}
-*/
-
 .contenedor-articulo .col-md-3 {
-    width: 27%;
+    width: 31%;
     margin-top: 1rem;
     margin-bottom: 1rem;
     height: 44rem;
@@ -802,9 +810,9 @@ header::before {
     text-align: left;
     background: #f9f9f9;
     border-radius: 0.5rem;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 1rem 1rem 1rem;
     transition: 0.5s;
-    border: 0.1rem solid rgba(164, 164, 253, 0.362);
+    border: 0.1rem solid rgba(148, 73, 253, 0.362);
     overflow-y: hidden;
 }
 
@@ -813,56 +821,33 @@ header::before {
     overflow-y: hidden;
 }
 
-
-
-/*    
-.col-md-3 .text-center 
-
-/*
-.contenedor-articulo .icon {
-    font-size: 0rem;
-    margin: 0rem auto;
-    margin-top: 0rem;
-    margin-bottom: 0;
-}
-*/
-/*
-.contenedor-articulo .icon > img {
-    margin-top: 1rem;
-    padding: 0rem 0 0rem 0;
-    height: 5rem;
-    width: 5rem;
-    opacity: 1;
-}
-
-*/
-
 .contenedor-articulo h1 {
     font-family: "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 2rem;
+    line-height: 2.4rem;
     width: 90%;
-    margin-left: 1rem;
-    /*height: 6vh;*/
-    margin-top:  0.3rem;
+    margin-left: 5%;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     color: #181801;
-    color: #01000b;
     color: #566350;
+    color: #01000b;
+    color: #380363fb;
     font-weight: 600;
     letter-spacing: .03rem;
-    text-align: left;
+    text-align: center;
 }
 
 .contenedor-articulo p {
     font-size: 1.6rem;
     font-weight: 300;
-    color: #02000c;
-    width: 90%;
-    margin-left: 1rem;
+    text-align: justify;
+    color: #000001;
+    width: 80%;
+    margin-left: 10%;
     line-height: 2.2rem;
     margin-top: 0;
 }
-
 
 .contenedor-articulo .col-md-3 span {
     color: #ff4d73;
@@ -890,8 +875,9 @@ header::before {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
     transition: 1.5s;
     border-radius: 0.2rem;
-    background-color: #b3dbffa1;
-    background-color: #00092dd6;
+    /*background-color: #b3dbffa1;
+    background-color: #00092dd6;*/
+    background: #9646d6fb;
     background-image: url(./Dynamics365_BCLogo.png);
     background-size: 60%;
     background-repeat: no-repeat;
@@ -932,9 +918,13 @@ header::before {
 
 
 .contenedor-articulo .col-md-3:hover .s-btn {
-    background: #f9f9f9;
-    color: #050166;
-    font-weight: 900;
+    background: #f2f2f2;
+    color: #09004d;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    /*width: auto;
+    text-align: center;*/
 }
 
 .contenedor-articulo .col-md-3:hover #escribe {
@@ -948,17 +938,18 @@ header::before {
 
 
 .s-btn {
-    width: 14rem;
-    padding: 0.8rem .5rem;
+    width: 12rem;
+    padding: 0.5rem .5rem;
     /*height: 3rem;*/
-    border-radius: 0.3px;
-    background-color: #09004d;
-    border: solid #019dfe 0.1rem;
+    border-radius: 1rem;
+    background: #09004d;
+    background: #6301b3fb;
+    border: solid  #b4abf9 0.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #f9f9f9;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin: 2rem auto;
     /*bottom: 2rem;*/
@@ -966,13 +957,6 @@ header::before {
     cursor: pointer;
 }
 
-
-.s-btn:hover {
-    border-radius: 3.5rem;
-    color: white;
-    transition: all ease 0.3s;
-    
-}
 
 
 
@@ -1001,7 +985,6 @@ header::before {
 }
 
 .slider-contenedor {
-    
     display: flex;
     width: inherit;
 }
@@ -1012,8 +995,12 @@ header::before {
     overflow: hidden;
     height: 40rem;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    /*
+    align-content: center;
+    justify-content: center;
+    */
     flex-shrink: 0;    
     background-color: #02013cab;
     color: #ffffff;
@@ -1023,12 +1010,31 @@ header::before {
 .contenido-slider .content {
     width: 130rem;
     margin: auto;
-    padding: 2rem 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
     /*display: flex;
     justify-content: space-around;
     align-items: center;*/
-    
+    height: 50%;
+    max-height: 50%;
+    overflow-y: scroll;
 }
+
+
+.contenido-slider .content::-webkit-scrollbar {
+    width: 0.15rem;
+    margin-left: 1rem;
+    background:transparent;
+}
+
+.contenido-slider .content::-webkit-scrollbar-thumb {
+    background: #010499;
+    border-radius: 0.15rem;
+    border-right: 0.15rem solid #f2f2f2;
+}
+
+
 
 
 .contenido-slider:nth-child(2) {
@@ -1060,11 +1066,16 @@ header::before {
 
 .contenido-slider h2 {
     font-weight: 600;
+    height: 5rem;
     font-size: 2rem;
-    text-align: justify;
-    line-height: 3rem;
+    text-align: center;
+    line-height: 2.5rem;
     color: #f9f9f9;
     text-transform: uppercase;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 90%;
+
 }
 .contenido-slider p {
     width: 100%;
@@ -1072,7 +1083,7 @@ header::before {
     font-weight: 300;
     text-align: justify;
     line-height: 2.4rem;
-    color: #f2f2f2;
+    color: #f9f9f9;
     margin: 0 0;
     margin-bottom: 0.8rem;
 }
@@ -1090,10 +1101,10 @@ header::before {
     font-weight: 600;
     width: 100px;
     display: block;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     text-align: center;
     border-radius: 5px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-decoration: none;
 }
 
@@ -1124,11 +1135,6 @@ header::before {
     background: #ffffff;
     color: #080029;
 }
-
-
-
-
-
 
 
 
@@ -1218,18 +1224,19 @@ header::before {
                         flex-direction: column;
                         /*justify-content: center;*/
                         align-items: center;
-                        border-radius: 1rem;
-                        width: 30%;
+                        border-radius: 0.4rem;
+                        width: 32%;
                         height: auto;
-                        max-height: 28rem;
-                        padding: 1.5rem 2rem;
+                        max-height: 30rem;
+                        padding: 1.5rem 3.5rem;
                         box-sizing: border-box;
                         margin: 0rem;
                         margin-right: 0.3rem;
-                        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.576);
-                        box-shadow: 2px 2px 4px rgba(0, 63, 141, 0.915);
+                        box-shadow: 2px 2px 4px rgba(0, 2, 46, 0.576);
                         position: relative;
-                        background-color: #f9f9f9;
+                        background: #f9f9f9;
+                        background: #5f48c6;
+                        background: #4709c2c8;
                     }
 
                     .nheader {
@@ -1242,7 +1249,7 @@ header::before {
                         flex-wrap: nowrap;
                         justify-content: left;
                         align-items: center;
-                        border-bottom: 1px solid rgba(0, 2, 45, 0.596);
+                        /*border-bottom: 1px solid rgba(0, 2, 45, 0.596);*/
                     }
                     .nheader > img {
                         height: 6rem;
@@ -1258,10 +1265,10 @@ header::before {
                     }
                     
                     .nheader > h4 {
-                        color: #576975;
+                        color: #f9f9f9;
                         letter-spacing: normal;
-                        font-size: 1.8 rem;
-                        font-weight: 600;
+                        font-size: 1.8rem;
+                        font-weight: bold;
                         line-height: 2.2rem;
                         height: auto;
                         max-height: 6rem;
@@ -1271,48 +1278,54 @@ header::before {
                     }
                     .ntexto {                    
                         height: auto;
-                        min-height: 13rem;
-                        max-height: 13rem;
+                        min-height: 15rem;
+                        max-height: 15rem;
                         overflow-y: hidden;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-evenly;
+                        justify-content: start;
                         margin-top: 1rem;
-                        padding: 0 0;
+                        padding: 0 1rem;
+                        border-top: 1px solid #ffffff45;
                     }
                         .news-box p {
-                            color: rgb(6, 1, 29);
+                            color: #f2f2f2;
                             text-align: justify;
                             font-size: 1.5rem;
                         }
                         
                         .news-box:hover p {
-                            color: rgb(0, 0, 0);
-                            font-weight: bold ;
+                            color: #ffffff;
+                            /*font-weight: bold ;*/
                         }
                         .ntexto .espacio {
                             height: 0.5rem;
                         }
                     
                     .news-box .news-btn {
-                        width: 10rem;
+                        width: 14rem;
                         padding: 0.5rem .5rem;
                         border: solid #01000ee4 0.1rem;
                         display: flex;
+                        /*
                         justify-content: center;
                         align-items: center;
-                        color: #f2f2f2;
-                        font-size: 1.4rem;
+                        */
+                        justify-content: center;
+                        text-align: center;
+                        color: #4709c2c8;
+                        font-size: 1.2rem;
                         text-decoration: none;
                         font-weight: 600;
-                        margin-top: 1rem;
+                        margin-top: 2rem;
                         margin-bottom: 2rem;
-                        background: #010035;
+                        background: #f2f2f2;
                     }
                     
                     .news-box:hover {
-                        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+                        box-shadow: 2px 2px 6px rgba(124, 3, 184, 0.8);
                         transition: all ease 0.3s;
+                        background: rgba(124, 3, 184, 0.8);
                     }
                     
                     .news-btn:hover {
@@ -1320,9 +1333,9 @@ header::before {
                         border: 1px solid #4a90e2;
                         color: #ffffff;*/
                         
-                        font-weight: 300;
-                        color: #ffffff;
-                        background: #010012e4;
+                        font-weight: 600;
+                        /*color: #ffffff;
+                        background: #010012e4;*/
                         transition: all ease 0.3s;
                         border-radius: 5rem;
                     }
@@ -1335,7 +1348,7 @@ header::before {
                         left: 50%;
                         top: 0;
                         transform: translate(-50%);
-                        background-color: #292203;
+                        background-color: #f2f2f2;
                         border-radius: 0 0 10px 10px;
                         display: none;
                         animation: bar 0.5s;
@@ -1495,6 +1508,7 @@ header::before {
     background: #f0f0e6;
     /*background-color: #f0f0e6;*/
     background: #00061c;
+    background: #220066;
     
     
 }
@@ -1576,7 +1590,7 @@ header::before {
                     margin-bottom: 2rem;
                     top: 0;
                     /*padding: % 1%;*/
-                    background-color: #f2f2f2;
+                    background-color: #f9f9f9;
                     box-shadow: 0 .5rem 1rem rgba(18, 19, 69, 0.623);
                     padding-top: 0.5rem;
                     padding-bottom: 0.5rem;
@@ -1906,6 +1920,7 @@ header::before {
                         display: flex;
                         background: #fcfcefc7;
                         background: #ecf4fc;
+                        background: #f9f9f9;
                         height: 5rem;
                         width: 5rem;
                         /*margin: 0% 0.1%;*/
@@ -2475,7 +2490,10 @@ header::before {
     }*/
     
     .contenido-header {
-        max-width: 100%;
+        width: 100%;
+    }
+    .textos-header h1 span {
+        font-size: 4.5rem;
     }
     
     /******************portfolioservs**************/
@@ -2483,11 +2501,16 @@ header::before {
     .portfolioservs {
         overflow: hidden;
     }
+    .carslider .carslides:nth-child(1) {
+        margin-left: 2%;
+        width: 61%;
+    }
+    /*
     .carcontainer {
         width: 100%;
         
     }
-
+*/
 
     /*****************PORTAFOLIO SERVICIOS *****************/
     .contenedor-articulo {
@@ -2501,9 +2524,15 @@ header::before {
     /***** EXPERIENCIA ******************/
      /*****sin cambios***/
 
+     .contenido-slider .content {
+        width: 80%;
+        justify-content: center;
+     }
+    
+
     /*******************NOTICIAS***************/
     .recursoscontainer {
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
     .rec-contenedor {
@@ -2528,9 +2557,9 @@ header::before {
         margin-bottom: 1rem;
     }
     .news-box .news-btn {
-        margin-top: 3rem;
+        margin-top: 2.5rem;
     }
-
+    
     /*******Contacto**********/
     .forma-contacto {
         width: 100%;
@@ -2540,11 +2569,10 @@ header::before {
 
 @media screen and (width: 1280px) and (height: 800px) {
     .portfolioservs {
-        height: 600px;
+        height: 73vh;
     }
-    .carcontainer {
-        height: 600px;
-        max-height: 600px;
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 58vh;
     }
 }
 
@@ -2553,10 +2581,14 @@ header::before {
 @media screen and (max-width: 1200px) {
     
 /*********portfolioservs************/
-    .carslider .carslides:nth-child(1) .slidecontent {
+.carbuttons {
+    right: 52rem;
+}
+/*   
+.carslider .carslides:nth-child(1) .slidecontent {
         max-width: 64%;
     }
-
+*/
     /*
     .carcontainer {
         width: 110rem;
@@ -2581,6 +2613,9 @@ header::before {
     /********Header*******/
    
     /********Launch*******/
+    .launch {
+        background-position-x: calc(right);
+    }
 
     .textos-header h1 span {
         font-size: 4rem;
@@ -2590,15 +2625,16 @@ header::before {
     }
     .textos-header p {
         font-size: 1.6rem;
-        margin-top: 22%;
+        
     }
 
 
     /*********portfolioservs************/
+    /*
     .carslider .carslides:nth-child(1) .slidecontent {
         max-width: 68%;
     }
-
+*/
     /*****************PORTAFOLIO SERVICIOS *****************/
     .contenedor-articulo {
         width: 90%;
@@ -2610,26 +2646,28 @@ header::before {
     }
     /***** EXPERIENCIA ******************/
      
-    .contenido-slider .content {
-        width: 100rem;
-    }
-    .contenido-slider p {
-        width: 98%;
-    }
+    
 
     /*******************NOTICIAS***************/
-    .recursoscontainer {
+    /*.recursoscontainer {
         width: 100rem;
     }
+    */    
     .rec-subtitle {
         margin-bottom: 1rem;
     }
-    .noticiasbox {
-        margin-bottom: 1rem;
+    .nheader > h4 {
+        font-size: 1.6rem;
     }
+    .news-box p {
+        font-size: 1.4rem;
+        margin-top: 0.5rem;
+    }
+    
     .news-box .news-btn {
-        margin-top: 3rem;
+        margin-top: 2.5rem;
     }
+    
     .pregres {
         width: 95%;
         margin-bottom: 1rem;
@@ -2638,68 +2676,88 @@ header::before {
 
 
 @media screen and (width: 1024px) and (height: 1366px) {
-    .textos-header p {
-        margin-top: 5rem;    
-    }
-    /*.launch {
-        height: 650px;
-    }
-    .contenido-header {
-        height: 500px;
-        
-    }
-    .textos-header {
-        height: 400px;
+  /****launch*********/
+    .launch {
+        height: 40vh;
     }
     
-    */
+    .contenido-header {
+        height: inherit;
+    }
+    .textos-header {
+        height: 60%;
+    }
+    .textos-header h1 {
+        margin-top: 2rem;
+    }
+    .textos-header h1 span {
+        font-size: 5rem;
+    }
+    .textos-header h2 {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        margin-top: -0.5rem;
+    }
+    .textos-header p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 2rem;
+    }
+
+
+
 
     .portfolioservs {
         height: 600px;
     }
+
     .carcontainer {
         height: 600px;
         max-height: 600px;
     }
-}
+        */
 
-@media screen and (width: 1024px) and (height: 1366px) {
-  /****launch*********/
-
-    .textos-header h1 {
-        margin-top: 2rem;
-        font-size: 1.8rem;
-    }
-    .textos-header h1 span {
-        font-size: 4.8rem;
-    }
-    .textos-header h2 {
-        width: 90%;
-        max-width: 90%;
-        font-size: 2.8rem;
-        line-height: 3.6rem;
-    }
-
-    .textos-header p {
-        width: 90%;
-        max-width: 90%;
-        font-size: 2.4rem;
-        line-height: 2.8rem;
-        margin-top: 18rem;
-    }
-  
-    
+        .portfolioservs {
+            height: 40vh;
+        }
+        .carslider .carslides:nth-child(1) .slidecontent {
+            height: 32vh;
+        }
 }
 
 @media screen and (width: 1024px) and (height: 600px) {
+    .launch {
+        height: 600px;
+    }
+    .contenido-header {
+        height: inherit;
+    }
+
     .textos-header {
-        height: 64%;
+        margin-top: 3rem;
+        height: 66%;
+    }
+    .textos-header h1 span {
+        font-size: 5rem;
+    }
+    
+    .textos-header h2 {
+        margin-top: -0.5rem;
+        font-size: 2.2rem;
+        line-height: 2.4rem;
     }
     .textos-header p {
-        margin-top: 16rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-top: 5rem;
     }
+
+/*********portfolioservs*********/
     .portfolioservs {
-        height: 580px;
+        height: 73vh;
+    }
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 58vh;
     }
 }
 
@@ -2711,12 +2769,12 @@ header::before {
 
     /*********portfolioservs************/
 
-    
+    /*
     .carslider .carslides:nth-child(1) .slidecontent {
         max-width: 72%;
     }
 
-
+*/
     /*********recursos y noticias**********/
     .recursoscontainer {
         width: 100%;
@@ -2735,7 +2793,33 @@ header::before {
 
 @media screen and (width: 912px) and (height: 1368px) {
     /****launch*********/
+    .launch {
+        height: 45vh;  
+    }
+    .contenido-header {
+        height: inherit;
+    }
+    .textos-header {
+        height: 70%;
+    }
+    .textos-header h1 {
+        margin-top: 2rem;
+    }
+    .textos-header h1 span {
+        font-size: 5rem;
+    }
+    .textos-header h2 {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        margin-top: -0.5rem;
+    }
+    .textos-header p {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-top: 6rem;
+    }
 
+/*
     .textos-header h1 {
         margin-top: 2rem;
         font-size: 1.8rem;
@@ -2743,31 +2827,23 @@ header::before {
     .textos-header h1 span {
         font-size: 4.8rem;
     }
-    .textos-header h2 {
-        width: 90%;
-        max-width: 90%;
-        font-size: 2.8rem;
-        line-height: 3.6rem;
-    }
+    
 
-    .textos-header p {
-        width: 90%;
-        max-width: 90%;
-        font-size: 2.4rem;
-        line-height: 2.8rem;
-        margin-top: 18rem;
-    }
-  
+  */
 
-
-
-
-    .portfolioservs {
-        height: 600px;
-    }
+/*
     .carcontainer {
         height: 600px;
         max-height: 600px;
+    }
+
+        */
+
+    .portfolioservs {
+        height: 40vh;
+    }
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 32vh;
     }
 }
 
@@ -2777,21 +2853,40 @@ header::before {
     /********Header*******/
     
     /********Launch 900px*******/
-    .textos-header p {
-        margin-top: 28%;
+    .launch {
+        height: 65vh;
+        /*background-size: 120%;*/
     }
+
+    .textos-header h1 {
+        margin-top: 8%;
+    }
+    .textos-header h2 {
+        margin-top: -1rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    
+    .textos-header p {
+        margin-top: 3rem;
+    }
+    .contactanos {
+        margin-top: 2%;
+    }
+
    
     /*********portfolioservs************/
+
     .portfolioservs {
         background-position-x: left;
         background-size: cover;
         background-image: url('./fondo_portfolio01.png');
     }
-    .carslider .carslides:nth-child(1) .slidecontent {
+/*    .carslider .carslides:nth-child(1) .slidecontent {
         max-width: 78%;
     }
 
-    
+    */
     /******noticias y preguntas******/
     .news-box {
         width: 100%;
@@ -2805,27 +2900,32 @@ header::before {
         margin-bottom: 0.4rem;
     }
     .nheader > h4 {
+        font-size: 1.8rem;
         margin-left: 1rem;
         margin-top: 0;
+        margin-bottom: 0.5rem;
         padding-top: 0;
-        font-weight: 900;
+        font-weight: 600;
     }
 
     .ntexto {
         margin-top: 0.5rem;
         height: auto;
         min-height: auto;
-        width: 94%;
+        width: 100%;
+        padding: 0 5rem;
+        padding-top: 1rem;
         justify-content: left;
     }
     .ntexto p {
         font-size: 1.5rem;
+        line-height: 1.7rem;
         padding: 0 0;
-        margin: 0.3rem 0;
+        margin-top: 1rem;
     }
+    
     .news-box .news-btn {
-        height: 2rem;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         margin-bottom: 0;
     }
     
@@ -2843,54 +2943,61 @@ header::before {
 
 @media screen and (width: 853px) and (height: 1280px) {
     /******launch********/
-    .textos-header h1 span {
-        font-size: 4.4rem;
-        width: 90%;
-        max-width: 90%;
+    .launch {
+        height: 45vh;
     }
-    
+    .contenido-header {
+        height: inherit;
+    }
     .textos-header h2 {
-        width: 90%;
-        max-width: 90%;
-        font-size: 2.4rem;
-        line-height: 3rem;
+        line-height: 2.4rem;
     }
     .textos-header p {
-        width: 90%;
-        max-width: 90%;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        margin-top: 22rem;
+        line-height: 2rem;
+    }
+
+    .portfolioservs {
+        height: 42vh;
+    }
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 32vh;
     }
 }
 
 
 @media screen and (width: 820px) and (height: 1180px) {
     /****launch*********/
-
+    .launch {
+        height: 60vh;
+    }
+    .contenido-header {
+        height: inherit;
+    }
+    .textos-header {
+        height: 70%;
+    }
+    .textos-header h1 span {
+        font-size: 5rem;
+    }
+    .textos-header h2 {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+    .textos-header p {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin-top: 10rem;
+    }
+/*
     .textos-header h1 {
         margin-top: 2rem;
         font-size: 1.6rem;
     }
-    .textos-header h1 span {
-        font-size: 4rem;
-    }
-    .textos-header h2 {
-        width: 90%;
-        max-width: 90%;
-        font-size: 2.2rem;
-        line-height: 3.2rem;
-    }
+   
     
-    .textos-header p {
-        width: 90%;
-        max-width: 90%;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        margin-top: 22rem;
-    }
-
-
+    
+   
+*/
 
     .portfolioservs {
         height: 600px;
@@ -2937,11 +3044,19 @@ header::before {
     }*/
 
     /********portfolioservs*******/
-
+/*
     .carslider .carslides:nth-child(1) .slidecontent {
         max-width: 86%;
     }
-
+*/
+    .carslider .carslides:nth-child(1) {
+        margin-left: 1%;
+        width: 62%;
+    }
+    .carbuttons {
+        right: 55rem;
+        gap: 3rem;
+    }
 
 
     /*****************INICIO PORTAFOLIO SERVICIOS *****************/
@@ -2972,10 +3087,9 @@ header::before {
         height: 24rem;
     }
     .contenedor-articulo p {
-        width: 96%;
+        
         font-size: 1.5rem;
         line-height: 1.8rem;
-        text-align: justify;
     }
     .s-btn {
         margin-top: 1rem;
@@ -3008,7 +3122,20 @@ header::before {
 
 @media screen and (max-width: 780px) {
     /********portfolioservs*******/
+    .carslider .carslides {
+        margin-left: -6rem;
+    }
 
+    .carslider .carslides:nth-child(1) {
+        width: 55%;
+        
+    }
+    .carbuttons {
+        right: 61rem;
+        gap: 3rem;
+    }
+
+    /*
     .carslider .carslides:nth-child(1) .slidecontent {
         max-width: 90%;
     }
@@ -3020,12 +3147,17 @@ header::before {
         width: 4rem;
         height: 4rem;
     }
+        */
 }
 
 
 @media screen and (width: 768px) and (height: 1024px) {
     /****launch*********/
+    .launch {
+        height: 60vh;
+    }
 
+    /*
     .textos-header h1 {
         margin-top: 2rem;
         font-size: 1.6rem;
@@ -3047,11 +3179,11 @@ header::before {
         line-height: 2.4rem;
         margin-top: 22rem;
     }
-
+*/
 
     
     .portfolioservs {
-        height: 600px;
+        height: 540px;
     }
     .carcontainer {
         height: 600px;
@@ -3066,6 +3198,10 @@ header::before {
 
 @media screen and (width: 712px) and (height: 1138px) {
     /****launch*********/
+    .launch {
+        height: 50vh;
+    }
+    /*
     .textos-header {
         height: 42vh;
     }
@@ -3091,11 +3227,13 @@ header::before {
         width: 80%;
         max-width: 80%;
     }
+        */
 }
 
 
 /*hasta 700px*/
 @media screen and (max-width: 700px) {
+
    /********Header*******/
     .nav .logo {
         width: 40%;
@@ -3106,13 +3244,21 @@ header::before {
 
   
     /********Launch 700px*******/
-
+/*
     .textos-header p {
         margin-top: 35%;
     }
+        */
     /***portfolioservs*****/
-    .carslider .carslides:nth-child(1) .slidecontent {
-        max-width: 100%;
+    .carslider .carslides {
+        margin-left: -12rem;
+    }
+    .carslider .carslides:nth-child(1) {
+        width: 50%;
+    }
+    .carbuttons {
+        right: 66rem;
+        gap: 3rem;
     }
 
 }
@@ -3145,11 +3291,17 @@ header::before {
    
     /********Launch 650px*******/
     .launch {
-        background-size: 150%;
+        width: 100%;
+        max-width: 100%;
+        background-image: url(./eAcc11.png);
     }
+    /*.launch {
+        
+    }*/
+    /*
     .textos-header p {
         margin-top: 36%;
-    }
+    }*/
     /*
     .textos-header h1 span {
         font-size: 2.8rem;
@@ -3162,9 +3314,18 @@ header::before {
     
     */
     /***********PORTFOLIOS*********/
-    .carslider .carslides:nth-child(1) {
-        width: 110%;
-    }        
+    .carbuttons {
+        right: 72rem;
+        gap: 0.5rem;
+    }
+    /*
+    .carslider .carslides {
+        margin-left: -14rem;
+    }
+    .carslider .carslides {
+        width: 40%;
+    }    
+    */
 
 /**************Contacto*********************/
     .forma-contacto {
@@ -3239,17 +3400,91 @@ header::before {
 
  /****LAUNCH ***********/
   /********Launch 600px*******/
-
+    .textos-header h1 {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+    .textos-header h1 span {
+        font-size: 3.2rem;
+    }
 
     .textos-header h2 {
-        width: 65%;
+        font-size: 1.6rem;
+        /*max-width: 70%;*/
     }
     .textos-header p {
-        width: 65%;
-        margin-top: 30%;
+        /*max-width: 70%;*/
+        font-size: 1.45rem;
+        /*margin-top: 30%;*/
     }
 
     /***portfolioservs*****/
+
+    .carcontainer {
+        width: 100%;
+    }
+    .carslider {
+        width: 80%;
+        left: 10%;
+    }
+
+    .carslider .carslides {
+        width: 80%;
+        top: 1rem;
+        transform: translateX(-200%);
+        height: 0rem;
+        width: 0rem;
+    } 
+    
+    .carslider .carslides:nth-child(1) {
+        top: 0rem;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        justify-self: center;
+        align-self: center;
+        /*border: none;*/
+        border-bottom: 1px solid rgb(61, 13, 234);
+        padding: 0 0;
+
+    }
+ 
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 42vh;
+        padding-top: 0;
+        margin: 0 0;
+
+    }
+    .carslider .carslides:nth-child(1) .slidecontent h2 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+    .carslider .carslides:nth-child(1) .slidecontentd {
+        height: 20vh;
+    }
+    .carbuttons {
+        position: relative;
+        bottom: -3rem;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        left: 0%;
+        gap: 10rem;
+        width: 100%;
+
+    }
+    .carbuttons span {
+        width: 4rem;
+        height: 4rem;
+    }
+    .carbuttons span::before {
+       
+        position: relative;
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    /*
     .carcontainer {
         width: 99%;
         max-width: 99%;
@@ -3263,15 +3498,7 @@ header::before {
         left: 0.5%;
     }
 
-    .carslider .carslides {
-        top: 80%;
-        transform: translateY(-45%);
-        transform: translateX(-210%);
-        width: 20rem;
-        height: 8rem;
-        padding: 0 0.2rem;
-        align-items: center;
-    }
+    
     .slidecontent .slidecont {
         display: none;
     }
@@ -3337,16 +3564,9 @@ header::before {
         width: 100%;
     }
 
-    .carbuttons {
-        bottom: 50%;
-        left: 2%;
-        gap: 86%;
-    }
-    .carbuttons span {
-        width: 4rem;
-        height: 4rem;
-    }
     
+    
+    */
     /****portafolio de servicios**********/
 
     .serv-head > h2, .serv-head > p {
@@ -3376,10 +3596,10 @@ header::before {
     }
 
 /*********xperience********/
-
+    /*
     .contenido-slider {
         height: 46rem;
-    }
+    }*/
     .contenido-slider .content {
         padding-top: 0rem;
     }
@@ -3395,21 +3615,32 @@ header::before {
         font-weight: 300;
     }
 
+
+/****************news*********/
+    .ntexto {
+        padding: 0 1rem;
+    }
+
+
+
+
+
 }
 
 /*hasta 550px*/
 @media screen and (max-width: 550px) {
     /*****launch********/
-    .textos-header h1 {
+    /*.textos-header h1 {
         margin-top: 1.5rem;
-    }
+    }*/
+    /*
     .textos-header h1 span {
         font-size: 2.6rem;
-    }
-    .textos-header p {
+    }*/
+    /*.textos-header p {
         margin-top: 38%;
     }
-
+*/
 
     /********Header*******/
 
@@ -3425,33 +3656,59 @@ header::before {
 @media screen and (width: 540px) and (height: 720px) {
     /****launch*********/
 
+    .contenido-header {
+        height: inherit;
+    }
+    .textos-header {
+        margin-top: 2rem;
+        height: 60%;
+    }
+    .textos-header h1 {
+        margin-top: 2rem;
+    }
+    .textos-header h1 span {
+        font-size: 3.6rem;
+    }
+
+    .textos-header h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-top: -0.5rem;
+    }
+    .textos-header p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 3rem;
+    }
+
+
+
+
+
+
+
+
+
+
+/*
     .textos-header h1 {
         margin-top: 2rem;
         font-size: 1.8rem;
     }
-    .textos-header h1 span {
-        font-size: 3rem;
-    }
-    .textos-header h2 {
-        width: 90%;
-        max-width: 90%;
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-    }
+    
+    
 
-    .textos-header p {
-        width: 90%;
-        max-width: 90%;
-        font-size: 1.6rem;
-        line-height: 2rem;
-        margin-top: 30rem;
+    
+    
+*/
+   .portfolioservs {
+        height: 56vh;
     }
-    .contactanos p {
-        margin-top: 2rem;
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 42vh;
     }
-
-    .portfolioservs {
-        height: 580px;
+    .carbuttons {
+        bottom: -0rem;
     }
     
     /**********portafolio de servicios*************/
@@ -3471,21 +3728,28 @@ header::before {
 
     
     /*Launch ok*/
-    .launch {
-        background-size: 170%;
-    }
 
+    .textos-header h1 span {
+        font-size: 2.6rem;
+        font-weight: 600;
+    }
     .textos-header h2 {
-        width: 80%;
-        max-width: 80%;
-    }
-    .textos-header p {
-        width: 80%;
-        max-width: 80%;
-        margin-top: 52%;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
     }
 
+    /*
+    .launch {
+        background-position-x: right;
+    }
+    
+    
+    .textos-header p {
+        font-size: 1.4rem;
+    }
+*/
     /****portfolios******/
+    /*
     .carslider .carslides {
         transform: translateX(-40rem);
     }
@@ -3494,7 +3758,7 @@ header::before {
         left: 2%;
         gap: 82%;
     }
-
+    */
     /*
 
     .carslider .carslides {
@@ -3534,7 +3798,7 @@ header::before {
 }
 
 /*hasta 450px*/
-@media screen and (max-width: 480px) and (max-height:854px) {
+@media screen and (width: 480px) and (height:854px) {
 
     /*
     .launch {
@@ -3550,12 +3814,18 @@ header::before {
 
         
     /*Launch ok*/
+    .textos-header h1 span {
+        font-size: 2.6rem;
+    }    
+
+/*
     .textos-header p {
-        margin-top: 54%;
+        margin-top: 10rem;
     }
-
-
+*/
+    
     /****portfolios******/
+    /*
     .carslider .carslides {
         transform: translateX(-38rem);
     }
@@ -3580,12 +3850,50 @@ header::before {
     .carslider .carslides:nth-child(1) .slidecontent .subtitle {
         text-align: left;
     }
-
+*/
     /***contacto****/
 
 
 }
 @media screen and (width: 430px) and (height: 932px) {
+
+
+    .contenido-header {
+        height: inherit;
+    }
+    .textos-header {
+        margin-top: 2rem;
+        height: 75%;
+    }
+    .textos-header h1 span {
+        font-size: 2.8rem;
+    }
+    .textos-header h2 {
+        font-size: 2rem;
+        margin-top: -0.5rem;
+        line-height: 2.2rem;
+    }
+    .textos-header p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 6rem;
+    }
+
+    .contactanos p {
+        margin-top: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     /*.launch {
         height: 580px;
         padding-left: 2rem;
@@ -3601,6 +3909,12 @@ header::before {
         height: 600px;
         max-height: 600px;
     }
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 54vh;
+    }
+    .carbuttons {
+        bottom: -10rem;
+    }
 
     /*******portafolio servicios**********/
     .serv-head > h2 {
@@ -3614,10 +3928,39 @@ header::before {
         height: 500px;
         padding-left: 2rem;
     }*/
-    .contactanos {
+
+    .contenido-header {
+        height: inherit;
+    }
+    .textos-header {
+        height: 70%;
+    }
+    .textos-header h1 span {
+        font-size: 2.6rem;
+    }
+    .textos-header h2 {
+        font-size: 1.8rem;
+        margin-top: -0.5rem;
+        line-height: 2rem;
+    }
+    .textos-header p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 6rem;
+    }
+    .contactanos p {
         margin-top: 0rem;
     }
-    
+
+
+
+
+
+
+
+
+
+
     .portfolioservs {
         max-height: 600px;
     }
@@ -3628,34 +3971,40 @@ header::before {
     .launch {
         height: 736px;
     }
-    .textos-header {
-        height: 54rem;
+    .contenido-header {
+        height: inherit;
     }
-    .textos-header h1 {
-        width: 100%;
+    .textos-header {
+        height: 70%;
     }
     .textos-header h1 span {
-        font-size: 3.6rem;
+        font-size: 4rem;
     }
-    
     .textos-header h2 {
-        width: 100%;
-        max-width: 100%;
-        line-height: 2.4rem;
         font-size: 2rem;
-        font-weight: 300;
-        margin-top: 0rem;
+        margin-top: -0.5rem;
+        line-height: 2.2rem;
     }
     .textos-header p {
-        width: 100%;
-        max-width: 100%;
-        margin-top: 26rem;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 8rem;
+    }
+    .contactanos p {
+        margin-top: 2rem;
     }
 
-
+    /********portfolioservs************/
     .portfolioservs {
-        height: 580px;
+        height: 658px;
     }
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 72vh;
+    }
+    .carbuttons {
+        bottom: -12rem;
+    }
+    
     
     /**********portafolio de servicios*************/
     .serv-head h2 {
@@ -3667,11 +4016,39 @@ header::before {
 }
 
 @media screen and (width: 412px) and (height: 915px) {
-
-    .textos-header p {
-        margin-top: 24rem;
+    
+    .contenido-header {
+        height: inherit;
     }
-   
+    .textos-header {
+        margin-top: 2rem;
+        height: 75%;
+    }
+    .textos-header h1 span {
+        font-size: 2.6rem;
+    }
+    .textos-header h2 {
+        font-size: 2rem;
+        margin-top: -0.5rem;
+        line-height: 2.2rem;
+    }
+    .textos-header p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 6rem;
+    }
+
+    .contactanos p {
+        margin-top: 1rem;
+    }
+
+
+/*******porfolioservs***********/
+
+    .carbuttons {
+        bottom: -4rem;
+    }
+
    
     /**********portafolio de servicios*************/
     .serv-head h2 {
@@ -3682,6 +4059,14 @@ header::before {
         margin-top: -14rem;
     }
 }
+@media screen and (width: 412px) and (height: 914px) {
+    /*******porfolioservs***********/
+
+    .carbuttons {
+        bottom: -5rem;
+    }
+}
+
 
 /*hasta 400px*/
 @media screen and (max-width: 400px) {
@@ -3696,29 +4081,77 @@ header::before {
     /********Header*******/
     
     /*Launch ok*/
-
-    .textos-header h1 {
-        width: 100%;
+    .launch {
+        background-position: calc(right - 5rem);
     }
+
+    .textos-header h1 span {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
     .textos-header h2 {
-        width: 100%;
-        max-width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        margin-top: -1rem;
     }
     .textos-header P {
-        width: 100%;
-        max-width: 100%;
-        margin-top: 64%;
+        margin-top: 3rem;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+    .contactanos p {
+        font-size: 1.4rem;
     }
 
     
         /****portfolios******/
-    .carbuttons {
+        .carslider .carslides:nth-child(1) .slidecontent h1 {
+            font-size: 1.6rem;
+        }
+        .carslider .carslides:nth-child(1) .slidecontent h1 span {
+            font-size: 1.25rem;
+        }
+        .carslider .carslides:nth-child(1) .slidecontent h2 {
+            font-size: 2.4rem;
+            line-height: 2.6rem;
+        }
+        .carslider .carslides:nth-child(1) .slidecontent p {
+            font-size: 1.45rem;
+            line-height: 1.6rem;
+        }
+        /*
+        .carbuttons {
         gap: 76%;
         left: 4%;
     }
     .carslider .carslides:nth-child(1) .slidecontent {
         max-width: 72%;
     }
+    */
+
+        /****************news*********/
+    .nheader > img {
+        height: 3rem;
+        min-height: 3rem;
+        max-height: 3rem;
+        width: 3rem;
+        min-width: 3rem;
+        max-width: 3rem;
+        opacity: 0.6;
+        margin-right: 1rem;
+    }
+    .nheader > h4 {
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+        width: 100%;
+        margin-left: 0;
+    }
+    .ntexto {
+        padding: 0 0rem;
+    }
+
+
 
 /*************portafolio de servicios*************/
     .serv-head > h2 {
@@ -3733,6 +4166,14 @@ header::before {
     }
     .contenedor-articulo p {
         font-size: 1.4rem;
+    }
+
+    /*******xperience*******/
+    .contenido-slider .content {
+        width: 94%;
+    }
+    .contenido-slider a {
+        margin-top: 2rem;
     }
 
     /**********noticias y preguntas**********/
@@ -3776,9 +4217,43 @@ header::before {
 }
 
 @media screen and (width: 390px) and (height: 844px) {
-    
+    /***********launch*********/
+    .contenido-header {
+        height: inherit;
+    }
+    .textos-header {
+        margin-top: 1rem;
+        height: 75%;
+    }
+    .textos-header h1 span {
+        font-size: 2.4rem;
+    }
+    .textos-header h2 {
+        font-size: 1.8rem;
+        margin-top: -0.5rem;
+        line-height: 2rem;
+    }
+    .textos-header p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 6rem;
+    }
+
+    .contactanos p {
+        margin-top: 1rem;
+    }
+
+
+
+
     .portfolioservs {
         height: 600px;
+    }
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 60vh;
+    }
+    .carbuttons {
+        bottom: -9rem;
     }
     
     /**********portafolio de servicios*************/
@@ -3792,37 +4267,65 @@ header::before {
 }
 
 @media screen and (width: 375px) and (height: 812px) {
+    .textos-header h2 {
+        line-height: 1.8rem;
+    }
+    /*
     .textos-header {
         height: 80%;
     }
-    .textos-header p {
-        margin-top: 26rem;
-    }
+    
     .contactanos p {
         margin-top: 2rem;
     }
-
+*/
     .portfolioservs {
-        height: 580px;
+        height: 460px;
     }
+    
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 44vh;
+    }
+    /*
+    .carbuttons {
+        bottom: -12rem;
+    }*/
 }
 
 @media screen and (width: 375px) and (height: 667px) {
     .launch {
         height: 667px;
     }
-    .textos-header {
-        height: 46rem;
+    .contenido-header {
+        height: inherit;
     }
+    .textos-header {
+        height: 70%;
+    }
+    .textos-header h1 span {
+        font-size: 3rem;
+    }
+    .textos-header h2 {
+        font-size: 2rem;
+        margin-top: -0.5rem;
+        line-height: 2.2rem;
+    }
+    .textos-header p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 6rem;
+    }
+    .contactanos p {
+        margin-top: 2rem;
+    }
+    /*
+    
     .textos-header h2 {
         margin-top: 0rem;
     }
 
-    .textos-header p {
-        margin-top: 20rem;
-    }
     
-
+    */
 
     .portfolioservs {
         height: 600px;
@@ -3830,6 +4333,12 @@ header::before {
     .carcontainer {
         height: 600px;
         max-height: 600px;
+    }
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 72vh;
+    }
+    .carbuttons {
+        bottom: -9rem;
     }
     /**********portafolio de servicios*************/
     .serv-head h2 {
@@ -3851,10 +4360,11 @@ header::before {
 
    
     /*Launch ok*/
+    /*
     .textos-header p {
         margin-top: 74%;
     }
-    
+    */
     /***portfolios******/
     .carslider .carslides {
     transform: translateX(-160%);
@@ -3915,17 +4425,46 @@ header::before {
     .launch {
         height: 640px;
     }
-
+    
+    
+    .textos-header {
+        height: 75%;
+    }
+    .textos-header h1 span {
+        font-size: 2.2rem;
+    }
+    .textos-header h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-top: 0;
+    }
+    .textos-header p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 6rem;
+    }
+    .contactanos p {
+        margin-top: 4rem;
+    }
+/*
     .textos-header {
         height: 70vh;
     }
-    .textos-header p {
-        margin-top: 16rem;
+    
+*/
+    
+    .portfolioservs {
+        height: 540px;
     }
 
-
-    .portfolioservs {
-    height: 540px;
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 68vh;
+    }
+    .carslider .carslides:nth-child(1) .slidecontentd {
+        height: 46vh;
+    }
+    .carbuttons {
+        bottom: -7rem;
     }
     
 
@@ -3934,24 +4473,62 @@ header::before {
     .launch {
         height: 740px;
     }
+
+    .contenido-header {
+        height: inherit;
+    }
     .textos-header {
-        height: 72vh;
+        margin-top: 2rem;
+        height: 75%;
     }
     .textos-header h1 span {
-        font-size: 3.1rem;
+        font-size: 3rem;
+    }
+    .textos-header h2 {
+        font-size: 2rem;
+        margin-top: -0.5rem;
+        line-height: 2.2rem;
     }
     .textos-header p {
-        margin-top: 26rem;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 10rem;
     }
+
     .contactanos p {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
-        
+
+
+    
     .portfolioservs {
         height: 580px;
     }
-    
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 64vh;
+    }
+    .carslider .carslides:nth-child(1) .slidecontentd {
+        height: 40vh;
+    }
+    .carbuttons {
+        bottom: -9rem;
+    }
 }
+
+@media screen and (width: 344px) and (height: 882px) {
+    /********launch*********/
+    .textos-header h1 span {
+        font-size: 3rem;
+    }
+    .textos-header h2 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    .textos-header {
+        height: 70%;
+    }
+}
+
 
 @media screen and (max-width: 320px) {
 
@@ -3964,20 +4541,32 @@ header::before {
     }
     
     /*Launch */
-    
-    .textos-header h1 span {
-        font-size: 2.4rem;
+    .textos-header h1 {
+        font-size: 1.4rem;
     }
+    .textos-header h1 span {
+        font-size: 1.8rem;
+    }
+    .textos-header h2 {
+        margin-top: 0rem;
+    }
+    .textos-header p {
+        margin-top: 3rem;
+    }
+    /*
     .textos-header {
         height: 84%;
     }
+        */
     .contactanos {
         height: 15%;
+        margin-top: 2rem;
     }
+    /*
     .textos-header p {
         margin-top: 96%;
     }
-
+*/
   
     /********portfolios***********/
     .carslider .carslides {
@@ -3994,10 +4583,11 @@ header::before {
         margin-bottom: 0rem;
     }*/
 /*******xperience******/
+    /*
     .contenido-slider {
         height: 56rem;
     }
-
+    */
 /************Noticias & Preguntas ***********/
     .rec-subtitle {
         font-size: 1.8rem;
@@ -4018,6 +4608,36 @@ header::before {
     .launch {
         height: 658px;
     }
+    
+    .contenido-header {
+        height: inherit;
+    }
+
+    .textos-header {
+        height: 72%;
+    }
+
+    .textos-header h1 span {
+        font-size: 2.2rem;
+    }
+    .textos-header h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-top: -0.5rem;
+    }
+    .textos-header p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: 8rem;
+    }
+ 
+    .contactanos p {
+        margin-top: 0rem;
+    }
+
+    
+    
+    /*
     .textos-header{
         height: 70vh;
     }
@@ -4025,17 +4645,22 @@ header::before {
         margin-top: 0rem;
         line-height: 2.1rem;
     }
-    .textos-header p {
-        margin-top: 18rem;
-    }
-    .contactanos p {
-        margin-top: 1rem;
-    }
+    
+    */
+
 
     .portfolioservs {
         height: 560px;
     }
-    
+     .carslider .carslides:nth-child(1) .slidecontent {
+        height: 70vh;
+    }
+    .carslider .carslides:nth-child(1) .slidecontentd {
+        height: 48vh;
+    }
+    .carbuttons {
+        margin-bottom: -10rem;
+    }
 }
 
 @media screen and (width: 320px) and (height: 568px) {
@@ -4043,22 +4668,48 @@ header::before {
     .launch {
         height: 568px;
     }
+    .contenido-header {
+        height: inherit;
+    }
+
     .textos-header {
-        height: 68vh;
+        margin-top: 3rem;
+        height: 70%;
+    }
+    .textos-header h1 {
+        margin-top: 2rem;
+    }
+    .textos-header h1 span {
+        width: 100%;
+        max-width: 100%;
+        font-size: 2.2rem;
+        font-weight: 300;
     }
     .textos-header h2 {
-        margin-top: 0rem;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-top: -0.5rem;
     }
     .textos-header p {
-        margin-top: 16rem;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        margin-top: 4rem;
     }
-    
+ 
+    .contactanos p {
+        margin-top: 0rem;
+    }
+
 
     
     .portfolioservs {
-        height: 540px;
+        height: 500px;
+    }
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 70vh;
+    }
+    .carbuttons {
+        bottom: -5rem;
     }
     
 }
@@ -4068,9 +4719,8 @@ header::before {
     .launch {
         height: 533px;
     }
-    .textos-header {
-        height: 66vh;
-    }
+    
+    /*
     .textos-header h1 {
         font-size: 1.8rem;
     }
@@ -4083,9 +4733,14 @@ header::before {
         margin-top: 10rem;
         font-size: 1.2rem;
     }
-    
+    */
     .portfolioservs {
         height: 530px;
     }
-    
+    .carslider .carslides:nth-child(1) .slidecontent {
+        height: 80vh;
+    }
+    .carbuttons {
+        bottom: -6rem;
+    }
 }
